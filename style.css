@@ -12,7 +12,13 @@
         margin: 0;
         padding: 0;
       }
-      
+      #center-column{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .jumbotrom{
+        border-radius: 0px;
+      }
       .custom-map-control-button {
         appearance: button;
         background-color: #fff;
