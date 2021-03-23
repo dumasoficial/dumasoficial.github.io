@@ -1,3 +1,62 @@
-<html>
-test
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chupe Ley Seca</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Chupe Ley Seca</h1>
+        <p>Consulta que alcaldias de la CDMX tienen "Ley Seca" este fin de semana y encuentra tu chupe más cercano en las alcaldias que no.</p>
+    </div>
+    <div class="container">
+        <div id="main-row" class="row">
+            <div id="left-column" class="column"></div>
+            <div id="center-column" class="column">
+                <div id="main" class="container text-center">
+                    <div id="alcaldiasConLeySeca">
+                        <p id="fechaConLeySeca"></p>
+                    </div>
+                    <div id="alcaldiasSinLeySeca">
+                        <p>Las alcaldias <strong>sin ley seca</strong> este fin de semana son:</p>
+                    </div>
+                    <div class="alert alert-success">
+                        Para buscar donde comprar chupe en alcaldias sin ley seca cerca de tu ubicación oprime el boton
+                        "Encontrar Chupe Cerca" que aparece sobre el mapa. No guardamos tu ubicación.
+                    </div>
+                </div>
+                <br>
+                <div id="map"></div>
+                <br>
+                <div id="resultados" class="card-columns">
+                </div>
+            </div>
+            <div id="right-column" class="column"></div>
+        </div>
+    </div>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>perdón ama<br>chupeleyseca.com</p>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi-Rh9LCfRVSZ0jkCKRfqp8_1h6IKKP7Y&callback=initMap&libraries=places&v=weekly"
+        async></script>
+    <script src="./load_data.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
 </html>
