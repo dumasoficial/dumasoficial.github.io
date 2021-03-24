@@ -12,12 +12,20 @@
         margin: 0;
         padding: 0;
       }
+      p{
+        font-size: 1.15rem;
+      }
       #center-column{
         padding-left: 0px;
         padding-right: 0px;
       }
       .jumbotron{
         border-radius: 0px;
+      }
+      #header-jumbotron-temp{
+        background:url('imagenes/fondo.jpeg') rgba(255, 255, 255, 1);
+        background-size:cover;
+        background-blend-mode: multiply;
       }
       .custom-map-control-button {
         appearance: button;
@@ -37,12 +45,17 @@
       }
       .sinLeySeca{
         color:green;
+        font-size: 1.15rem;
       }
       .conLeySeca{
         color:red;
+        font-size: 1.15rem;
       }
       .listaAlcaldia{
         list-style-type: none;
         text-align: center;
         padding-left: 0px;
+      }
+      li{
+        font-size: 1.15rem;
       }

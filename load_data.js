@@ -4,7 +4,6 @@ var txtNoSabemos = 'Todavía no sabemos qué alcaldías tendrán "Ley Seca" este
 var fechaTxt = "viernes 26 de marzo a las 18:00 horas hasta el domingo 28";
 //true indica que alcaldia tiene ley seca
 var alcaldias = { "Álvaro Obregón": true, "Benito Juárez": true, "Coyoacán": true, "Cuajimalpa": false, "Cuauhtémoc": true, "Gustavo A. Madero": false, "Iztacalco": true, "Iztapalapa": true };
-
 //
 function displayAlcaldiasList() {
     if (!sabemos) {
