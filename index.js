@@ -107,7 +107,8 @@ function displayResult(resultado) {
     card.setAttribute("class", "card");
     var cardBody = document.createElement("div");
     cardBody.setAttribute("class", "card-body");
-    var title = document.createElement("h5");
+    var title = document.createElement("p");
+    title.setAttribute("style","font-size:1.23rem;font-weight:500;margin-bottom:0px");
     title.innerHTML = resultado['name'];
     var body = document.createElement("p");
     body.innerHTML = '<span class="badge badge-success">' + duration + '</span> <span class="badge badge-primary">' + distance + '</span><br>' + resultado['formatted_address'] + ".";

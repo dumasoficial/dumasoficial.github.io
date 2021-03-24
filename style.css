@@ -15,6 +15,7 @@
       p{
         font-size: 1.15rem;
       }
+      
       #center-column{
         padding-left: 0px;
         padding-right: 0px;
@@ -70,4 +71,7 @@
         font-style: normal;
         font-weight: bold;
         margin-top:1em;
+      }
+      a{
+        font-size: 1.15rem;
       }
