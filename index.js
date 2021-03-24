@@ -3,7 +3,7 @@ var map;
 var service;
 var distanceService;
 var infoWindow;
-var alcaldias = { "Álvaro Obregón": true, "Benito Juárez": false, "Coyoacán": true, "Cuajimalpa": false, "Cuauhtémoc": true, "Gustavo A. Madero": false, "Iztacalco": true, "Iztapalapa": true };
+//var alcaldias = { "Álvaro Obregón": true, "Benito Juárez": false, "Coyoacán": true, "Cuajimalpa": false, "Cuauhtémoc": true, "Gustavo A. Madero": false, "Iztacalco": true, "Iztapalapa": true };
 var query = "en ";
 var posUsuario;
 var porAlcaldia = {};

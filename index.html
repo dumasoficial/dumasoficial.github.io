@@ -29,25 +29,35 @@
 
 <body>
     <div class="jumbotron">
-        <div class="container text-center">
+            <div class="container text-center">
             <h1>Chupe Ley Seca</h1>
             <p>Consulta que alcaldías de la CDMX tienen "Ley Seca" este fin de semana y encuentra donde comprar chupe en
                 las alcaldías que no.</p>
-        </div>
+            </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div id="main-row" class="row">
-            <div id="left-column" class="col-sm-2"></div>
-            <div id="center-column" class="col-sm-8">
-                <div id="main" class="container text-center">
+            <div id="left-column" class="col-sm-3 d-none d-lg-block">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Anuncio izquierdo</h5>
+                        <p>
+                            La ley seca es la prohibición de venta de bebidas alcohólicas en determinados momentos en los que las autoridades consideren necesaria esta suspensión. En México, al menos, se decreta los días de elecciones en el país, así como en diversas celebraciones como Semana Santa.
+                        </p>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div id="center-column" class="col-sm-6">
+                <div id="main" class="container">
                     <div id="alcaldiasConLeySeca">
                         <p id="fechaConLeySeca"></p>
                     </div>
                     <div id="alcaldiasSinLeySeca">
-                        <p>Las alcaldias <strong>sin ley seca</strong> este fin de semana son:</p>
+                        <p>Las alcaldias <strong>sin "Ley Seca"</strong> este fin de semana son:</p>
                     </div>
-                    <div class="alert alert-success">
-                        Para buscar donde comprar chupe en alcaldías sin ley seca cerca de tu ubicación oprime el botón
+                    <div class="alert alert-success text-center">
+                        Para buscar donde comprar chupe en alcaldías sin "Ley Seca" cerca de tu ubicación oprime el botón
                         "Encontrar Chupe Cerca" que aparece sobre el mapa. No guardamos tu ubicación. No tomes y manejes.
                     </div>
                 </div>
@@ -57,23 +67,54 @@
                 <div id="resultados" class="card-columns">
                 </div>
             </div>
-            <div id="right-column" class="col-sm-2">
+            <div id="right-column" class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Ley seca</h5>
+                        <p>
+                            La ley seca es la prohibición de venta de bebidas alcohólicas en determinados momentos en los que las autoridades consideren necesaria esta suspensión. En México, al menos, se decreta los días de elecciones en el país, así como en diversas celebraciones como Semana Santa.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Anuncio</h5>
+                        <p>
+                            La ley seca es la prohibición de venta de bebidas alcohólicas en determinados momentos en los que las autoridades consideren necesaria esta suspensión. En México, al menos, se decreta los días de elecciones en el país, así como en diversas celebraciones como Semana Santa.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5>¿Te sirvió?</h5>
+                        <center>
+                        <img src="imagenes/xd.png" style="width: 50%;"></center>
+                        <p class="text-left">
+                            Dejanos un like y compártela con tus amigos borrachos para que pueda seguir hosteando el sitio (y pueda comprar mis wamas).
+                        </p>
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
     </div>
-    <div class="jumbotron" style="margin-bottom:0">
-        <div class="container text-center">
-            <p>perdón ama<br>chupeleyseca.com</p>
-        </div>
-    </div>
+    <footer class="bg-light text-center text-secondary">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            perdón amá | el futuro es hoy
+            <br>
+            <a class="text-secondary" href="https://chupeleyseca.com">CHUPELEYSECA.COM</a>
+          </div>
+    </footer>
 
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. AIzaSyBi-Rh9LCfRVSZ0jkCKRfqp8_1h6IKKP7Y-->
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi-Rh9LCfRVSZ0jkCKRfqp8_1h6IKKP7Y&callback=initMap&libraries=places&v=weekly"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdFFcoDN8RjcmvqE6ikheV4PZupjbHVjw&callback=initMap&libraries=places&v=weekly"
         async></script>
     <script src="./load_data.js"></script>
     <script src="./index.js"></script>
-
+    
 </body>
 
 </html>
