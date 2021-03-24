@@ -59,3 +59,15 @@
       li{
         font-size: 1.15rem;
       }
+      blockquote{
+        font-style:italic;
+        padding: 0px 15px 0px 15px;
+      }
+      
+      blockquote span{
+        display:block;
+        color:#333333;
+        font-style: normal;
+        font-weight: bold;
+        margin-top:1em;
+      }
