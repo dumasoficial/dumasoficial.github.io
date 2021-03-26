@@ -1,11 +1,11 @@
 //datos a actualizar
 var avisoHTML=null; //null
-var sabemos = false; //si ya sabemos donde hay ley seca
+var sabemos = true; //si ya sabemos donde hay ley seca
 var fechaNoSabemos='26 a 28 de marzo 2021';
 var htmlNoSabemos = '<p>Todavía no sabemos qué alcaldías tendrán "Ley Seca" este fin de semana ('+fechaNoSabemos+'). En cuanto lo anuncie el Gobierno de la Ciudad de México o algún periodico (usualmente los viernes por la mañana) se actualizará la página.</p>';
 var fechaTxt = "viernes 26 de marzo a las 18:00 horas hasta el domingo 28";
 //true indica que alcaldia tiene ley seca
-var alcaldias = { "Álvaro Obregón": false,"Azcapotzalco":false, "Benito Juárez": false, "Coyoacán": false, "Cuajimalpa": false, "Cuauhtémoc": false, "Gustavo A. Madero": false, "Iztacalco": false, "Iztapalapa": false ,"Magdalena Contreras":false,"Miguel Hidalgo":false,"Milpa Alta":false,"Tláhuac":false,"Tlalpan":false,"Venustiano Carranza":false,"Xochimilco":false};
+var alcaldias = { "Álvaro Obregón": false,"Azcapotzalco":false, "Benito Juárez": false, "Coyoacán": false, "Cuajimalpa": false, "Cuauhtémoc": false, "Gustavo A. Madero": true, "Iztacalco": true, "Iztapalapa": true ,"Magdalena Contreras":true,"Miguel Hidalgo":true,"Milpa Alta":false,"Tláhuac":true,"Tlalpan":true,"Venustiano Carranza":false,"Xochimilco":true};
 //
 var htmlAlcaldiasSinLey='<p>Las alcaldias <strong>sin "Ley Seca"</strong> este fin de semana son:</p>';
 function displayAlcaldiasList() {
