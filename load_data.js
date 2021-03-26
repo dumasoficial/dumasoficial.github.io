@@ -6,7 +6,8 @@ var htmlNoSabemos = '<p>Todavía no sabemos qué alcaldías tendrán "Ley Seca" 
 var fechaTxt = "viernes 26 de marzo a las 18:00 horas hasta el domingo 28";
 //true indica que alcaldia tiene ley seca
 var alcaldias = { "Álvaro Obregón": false,"Azcapotzalco":false, "Benito Juárez": false, "Coyoacán": false, "Cuajimalpa": false, "Cuauhtémoc": false, "Gustavo A. Madero": true, "Iztacalco": true, "Iztapalapa": true ,"Magdalena Contreras":true,"Miguel Hidalgo":true,"Milpa Alta":false,"Tláhuac":true,"Tlalpan":true,"Venustiano Carranza":false,"Xochimilco":true};
-//
+var fuenteNombre="ADN40.";
+var fuenteLink="https://www.adn40.mx/ciudad/habra-ley-seca-cdmx-fin-de-semana-erv";
 var htmlAlcaldiasSinLey='<p>Las alcaldias <strong>sin "Ley Seca"</strong> este fin de semana son:</p>';
 function displayAlcaldiasList() {
     if (!sabemos) {
@@ -42,6 +43,12 @@ function displayAlcaldiasList() {
             document.getElementById("alcaldiasSinLeySeca").innerHTML=htmlAlcaldiasSinLey;
             document.getElementById("alcaldiasSinLeySeca").appendChild(listaAlcaldiasSinLeyDOM);
         }
+        var fuenteDOM=document.createElement("a");
+        fuenteDOM.href=fuenteLink;
+        fuenteDOM.innerText=fuenteNombre;
+        fuenteDOM.setAttribute("target","_blank");
+        document.getElementById("fuente").innerText="Fuente: ";
+        document.getElementById("fuente").appendChild(fuenteDOM);
     }
 }
 function displayFecha() {
