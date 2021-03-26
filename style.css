@@ -19,9 +19,12 @@
       #center-column{
         padding-left: 0px;
         padding-right: 0px;
+
       }
       .jumbotron{
         border-radius: 0px;
+        /**margin-bottom: 0px;*/
+        
       }
       #header-jumbotron-temp{
         background:url('imagenes/fondo.jpeg') rgba(255, 255, 255, 1);
