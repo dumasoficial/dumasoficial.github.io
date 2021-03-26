@@ -22,7 +22,7 @@ Hampton (blanco-gris) #E7DDB6
       }
       /* Default height for small devices */
       #intro-example {
-        height: 245px;
+        height: 200px;
       }
 
       /* Height for devices larger than 992px */
@@ -40,11 +40,13 @@ Hampton (blanco-gris) #E7DDB6
         padding-right: 0px;
 
       }
+      /*
       .alert-info {
         color: #B6331B;
         background-color: #ffbcb0ef;
         border-color: #fd9c8bef;
-    }
+      }
+    */
       footer{
         border-radius: 0px;
         /**margin-bottom: 0px;*/
