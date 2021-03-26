@@ -40,36 +40,53 @@
     </script>
     <!-- Favicon-->
     <link rel="shortcut icon" href="/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="apple-touch-icon" href="/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/favicon-144.png">
-	<meta name="msapplication-config" content="/browserconfig.xml">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/favicon-144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
 </head>
 
 <body>
+    <header>
+        <div id="intro-example" class="bg-image" style="background-image: url('imagenes/fondo.jpg');">
+            <div class="d-flex justify-content-center align-items-center h-100 text-center">
+                <div class="text">
+                <h1 class="mb-3">Chupe Ley Seca</h1>
+                <p class="mb-4">Consulta que alcaldías de la CDMX tienen "Ley Seca" este fin de semana y encuentra donde comprar
+                    chupe en
+                    las alcaldías que no.</p>
+                </div>
+            </div>
+            <!--
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
+                        <h5 class="mb-4">Best & free guide of responsive web design</h5>
+                    </div>
+                </div>
+            -->
+            </div>
+    </header>
+    <!--
     <div class="jumbotron" id="header-jumbotron">
-        <div class="container text-center">
-            <h1>Chupe Ley Seca</h1>
-            <p>Consulta que alcaldías de la CDMX tienen "Ley Seca" este fin de semana y encuentra donde comprar
-                chupe en
-                las alcaldías que no.</p>
-        </div>
+        
     </div>
+-->
     <div class="container-fluid">
         <div id="main-row" class="row">
             <div id="left-column" class="col-sm-3 d-none d-lg-block">
@@ -92,7 +109,7 @@
                         <p id="fechaConLeySeca"></p>
                     </div>
                     <div id="alcaldiasSinLeySeca">
-                        
+
                     </div>
                     <div class="alert alert-success text-center">
                         <p>
@@ -111,13 +128,20 @@
                 <div class="container" id="faq">
                     <h4>¿Qué es la "Ley Seca"?</h4>
                     <p>
-                        Es la prohibición de venta de bebidas alcohólicas en determinados momentos en los que las autoridades consideren necesaria. Ha sido una de las medidas del Gobierno de la Ciudad de México para combatir contagios de COVID-19.
+                        Es la prohibición de venta de bebidas alcohólicas en determinados momentos en los que las
+                        autoridades consideren necesaria. Ha sido una de las medidas del Gobierno de la Ciudad de México
+                        para combatir contagios de COVID-19.
                     </p>
                     <h4>¿Está prohibido comprar alcohol en línea?</h4>
                     <p>
-                        Cuando hay seca depende de la alcaldía - algunas prohíben la venta por internet (y en apps como Rappi) y otras no. Como por el momento ninguna alcaldía tiene ley seca, si puedes comprar bebidas alcohólicas en línea. 
+                        Cuando hay seca depende de la alcaldía - algunas prohíben la venta por internet (y en apps como
+                        Rappi) y otras no. Como por el momento ninguna alcaldía tiene ley seca, si puedes comprar
+                        bebidas alcohólicas en línea.
                         <br><br>
-                        Nota: si vas a pedir en línea y te frustra Rappi puedes probar Cornershop - app nueva de Uber donde te traen super y alcohol de supers y tienditas cerca. Si quieres probar puedes usar mi link para 2 envíos gratis lol: <a href="https://corner.shop/r/w2h3pty0q" target="_blank">https://corner.shop/r/w2h3pty0q</a>.
+                        Nota: si vas a pedir en línea y te frustra Rappi puedes probar Cornershop - app nueva de Uber
+                        donde te traen super y alcohol de supers y tienditas cerca. Si quieres probar puedes usar mi
+                        link para 2 envíos gratis lol: <a href="https://corner.shop/r/w2h3pty0q"
+                            target="_blank">https://corner.shop/r/w2h3pty0q</a>.
                     </p>
                     <!--
                     <blockquote class="blockquote text-justify">
@@ -152,12 +176,13 @@
             </div>
         </div>
     </div>
-    <footer class="bg-light text-center text-muted">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            <p>
-            perdón amá. el futuro es hoy.
-            <br>
-            chupeleyseca.com
+    <br>
+    <footer class="text-center">
+        <div class="text-center p-2" >
+            <p style="margin-bottom: 0px;">
+                perdón amá. el futuro es hoy.
+                <br>
+                chupeleyseca.com
             </p>
         </div>
     </footer>

@@ -1,5 +1,10 @@
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+/**
+pallete
+Wattle (amarillo) #DECF48
+Jon (cafe) #3D1F1F
+Thunderbird (naranja) #B6331B
+Hampton (blanco-gris) #E7DDB6
+*/
        #map {
         height: 400px;
         width: 100%;
@@ -12,6 +17,20 @@
         margin: 0;
         padding: 0;
       }
+      header{
+        margin-bottom: 2rem;
+      }
+      /* Default height for small devices */
+      #intro-example {
+        height: 280px;
+      }
+
+      /* Height for devices larger than 992px */
+      @media (min-width: 992px) {
+        #intro-example {
+          height: 245px;
+        }
+      }
       p{
         font-size: 1.15rem;
       }
@@ -21,9 +40,15 @@
         padding-right: 0px;
 
       }
-      .jumbotron{
+      .alert-info {
+        color: #0c5460;
+        background-color: #d1ecf1;
+        border-color: #bee5eb;
+    }
+      footer{
         border-radius: 0px;
         /**margin-bottom: 0px;*/
+        background-color: #DECF48;
         
       }
       #header-jumbotron-temp{
