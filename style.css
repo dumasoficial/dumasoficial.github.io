@@ -51,11 +51,6 @@ Hampton (blanco-gris) #E7DDB6
         background-color: #DECF48;
         
       }
-      #header-jumbotron-temp{
-        background:url('imagenes/fondo.jpeg') rgba(255, 255, 255, 1);
-        background-size:cover;
-        background-blend-mode: multiply;
-      }
       .custom-map-control-button {
         appearance: button;
         background-color: #fff;
