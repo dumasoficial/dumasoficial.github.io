@@ -1,7 +1,7 @@
 //datos a actualizar
 var avisoHTML=null; //null
-var sabemos = true; //si ya sabemos donde hay ley seca
-var fechaNoSabemos='26 a 28 de marzo 2021';
+var sabemos = false; //si ya sabemos donde hay ley seca
+var fechaNoSabemos='2 al 4 de abril 2021';
 var htmlNoSabemos = '<p>Todavía no sabemos qué alcaldías tendrán "Ley Seca" este fin de semana ('+fechaNoSabemos+'). En cuanto lo anuncie el Gobierno de la Ciudad de México o algún periodico (usualmente los viernes por la mañana) se actualizará la página.</p>';
 var fechaTxt = "viernes 26 de marzo a las 18:00 horas hasta el domingo 28";
 //true indica que alcaldia tiene ley seca
