@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="h-100">
 
 <head>
     <meta charset="utf-8">
@@ -15,7 +15,6 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
     <script data-ad-client="ca-pub-3106325824707750" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J9M30NSJJ8"></script>
@@ -58,145 +57,62 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="/favicon-144.png">
     <meta name="msapplication-config" content="/browserconfig.xml">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        body { 
+            background: url(imagenes/fondo.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+     <link href="cover.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <div id="intro-example" class="bg-image" style="background-image: url('imagenes/fondo.jpg');">
-            <div class="d-flex justify-content-center align-items-center h-100 text-center">
-                <div class="text px-3">
-                <h1 class="mb-3">Chupe Ley Seca</h1>
-                <p style="margin-bottom: 0px;">Consulta que alcaldías de la CDMX tienen "Ley Seca" este fin de semana y encuentra donde comprar
-                    chupe en
-                    las alcaldías que no.</p>
-                </div>
-            </div>
-            <!--
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="text-white">
-                        <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-                        <h5 class="mb-4">Best & free guide of responsive web design</h5>
-                    </div>
-                </div>
-            -->
-            </div>
-    </header>
-    <!--
-    <div class="jumbotron" id="header-jumbotron">
-        
-    </div>
--->
-    <div class="container-fluid">
-        <div id="main-row" class="row">
-            <div id="left-column" class="col-sm-3 d-none d-lg-block">
-                <!--
-                <div class="card">
-                    <div class="card-body">
-                        <h5>Anuncio izquierdo</h5>
-                        <p>
-                            La ley seca es la prohibición de venta de bebidas alcohólicas en determinados momentos en
-                            los que las autoridades consideren necesaria esta suspensión. En México, al menos, se
-                            decreta los días de elecciones en el país, así como en diversas celebraciones como Semana
-                            Santa.
-                        </p>
-                    </div>
-                </div>
-                <br>
-            -->
-            </div>
-            <div id="center-column" class="col-sm-6">
-                <div id="main" class="container">
-                    <div id="alcaldiasConLeySeca">
-                        <p id="fechaConLeySeca"></p>
-                    </div>
-                    <div id="alcaldiasSinLeySeca">
+<body class="d-flex h-100 text-center">
 
-                    </div>
-                    <p id="fuente"></p>
-                    <div class="alert alert-success text-center">
-                        <p>
-                            Para buscar donde comprar chupe en alcaldías sin "Ley Seca" cerca de tu ubicación oprime el
-                            botón
-                            "Encontrar Chupe Cerca" que aparece sobre el mapa. No guardamos tu ubicación. No tomes y
-                            manejes.
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <div id="map"></div>
-                <br>
-                <div id="resultados" class="card-columns">
-                </div>
-                <div class="container" id="faq">
-                    <h4>¿Qué es la "Ley Seca"?</h4>
-                    <p>
-                        Es la prohibición de venta de bebidas alcohólicas en determinados momentos en los que las
-                        autoridades consideren necesaria. Ha sido una de las medidas del Gobierno de la Ciudad de México
-                        para combatir contagios de COVID-19.
-                    </p>
-                    <h4>¿Está prohibido comprar alcohol en línea?</h4>
-                    <p>
-                        Oficialmente una vez que la alcaldía entra en “Ley Seca”, está prohibido comprar y vender alcohol en línea (aunque aplicaciones como Rappi y otras tienen que actualizar sus políticas…).
-                        <br><br>
-                        Nota: si vas a pedir en línea y te frustra Rappi puedes probar Cornershop - app nueva de Uber
-                        donde te traen super y alcohol de supers y tienditas cerca. Si quieres probar puedes usar mi
-                        link para 2 envíos gratis lol: <a href="https://corner.shop/r/w2h3pty0q"
-                            target="_blank">https://corner.shop/r/w2h3pty0q</a>.
-                    </p>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
                     <!--
-                    <blockquote class="blockquote text-justify">
-                        <p id="noticia-contenido">"Hasta la fecha, cabe destacar que la Ley Seca sigue estando vigente, durante los fines de semana, en algunas de las 16 alcaldías de la CDMX."
-                        </p>
-                        <footer class="blockquote-footer">
-                            <cite title="">
-                                <a href="https://www.televisa.com/noticias/semana-santa-habra-ley-seca-en-la-cdmx/">
-                                    Televisa
-                                </a>
-                            </cite>
-                        </footer>
+                    <a class="nav-link" href="#">Contacto</a>
                     -->
-                    </blockquote>
-                </div>
+                </nav>
+            </div>
+        </header>
 
-            </div>
-            <div id="right-column" class="col-sm-3">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h4>¿Te sirvió la página?</h4>
-                        <center>
-                            <img src="imagenes/xd.png" style="width: 50%;padding: 10px;">
-                        </center>
-                        <p class="text-left">
-                            Compártela con tus amigos para que pueda seguir hosteando el
-                            sitio (y pueda comprar wamas) uwu. Aquí le puedes dar like o compartir la página en FB:
-                       
-                            <div class="fb-like" data-href="https://chupeleyseca.com" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
-                    </p>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </div>
-    </div>
-    <br>
-    <footer class="text-center">
-        <div class="text-center p-2" >
-            <p style="margin-bottom: 0px;">
-                perdón amá. el futuro es hoy.
-                <br>
-                chupeleyseca.com
+        <main class="px-3">
+            <h1>Chupe Ley Seca</h1>
+            <p class="lead">Me dio flojera mantenerla.</p>
+            <p class="lead">
+                <!--
+                <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">IPhone</a>
+                <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Android</a>
+                -->
             </p>
-        </div>
-    </footer>
+        </main>
 
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. AIzaSyBi-Rh9LCfRVSZ0jkCKRfqp8_1h6IKKP7Y-->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi-Rh9LCfRVSZ0jkCKRfqp8_1h6IKKP7Y&callback=initMap&libraries=places&v=weekly"
-        async></script>
-    <script src="./load_data.js"></script>
-    <script src="./index.js"></script>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v10.0" nonce="3iJCezk0"></script>
+        <footer class="mt-auto text-white-50">
+            <p><a href="https://youtu.be/dQw4w9WgXcQ" class="text-dark">Contacto</a></p>
+        </footer>
+    </div>
+
+
+
 </body>
 
 </html>
