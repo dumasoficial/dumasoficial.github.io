@@ -1,0 +1,266 @@
+@charset "UTF-8";
+:root {
+  --bs-blue: #1D809F;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ecb807;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #1D809F;
+  --bs-secondary: #ecb807;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ecb807;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+
+  /*Colores y fonts a cambiar */
+  --bs-primary-rgb: 29, 128, 159;
+  --bs-secondary-rgb: 236, 184, 7;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 236, 184, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+strike{
+  color:red;
+}
+
+/* Tamaño de secciones */
+.content-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.social-section {
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
+/* Clases de colores */
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  /*background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;*/
+  background-color: black !important;
+}
+
+.bg-ep{
+  background-color: black !important;
+  color: white;
+}
+
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* Encabezado con imagen */
+.masthead {
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url("temp.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.masthead h1, .masthead .h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+.masthead h4{
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+  .masthead h1, .masthead .h1 {
+    font-size: 5.5rem;
+  }
+}
+
+/* Botonoes de Spotify/Apple Music */
+.customMusicButton{
+  color: white;
+  background-color: transparent;
+  background-image: none;
+  border-color: white; 
+  border-width: 2px;
+  width: 123px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  text-decoration: none !important;
+}
+.customMusicButton:hover{
+  color: black;
+  background-color: white;
+  background-image: none;
+  border-color: white; 
+}
+
+#iconMusicButton {
+    display: inline-block;
+    vertical-align: -.125em;
+    width: 1em;
+    height: 1em;
+}
+
+/* Botones de redes sociales */
+
+#social-icon{
+  display: inline-block;
+  vertical-align: -.125em;
+  width: 1em;
+  height: 1em;
+  font-size: 1.50em;
+  color: black;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.social-link:link,.social-link:visited,.social-link:hover,.social-link:active{
+  text-decoration: none;
+}
+
+/* Video*/
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}  
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url("temp.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Video emperimental*/
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+
+.carousel{
+  min-height: 35rem;
+}
+.imagen-carusel{
+  height: 35rem;
+  object-fit: cover;
+}
+
+
+a,a:active,a:hover{
+  text-decoration: underline;
+  color: black;
+}
+.product-card{
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
