@@ -9,15 +9,16 @@ datos={
     'spotify-link':'https://open.spotify.com/artist/6L5fpQAXb6qJMSNAV1YD0h?si=yVYusqQpTCaM3CUiIod9Lw',
     'apple-link':'https://music.apple.com/mx/artist/dumas/1522575788',
     'mail':'contacto@dumas.com.mx',
+    'whatsapp':'#',
 
     //Fechas
     'fechas':[
         //Una fecha
         {
-            'titulo':'29 de Enero: El after',
-            'detalles':'Detalles aqui. Nos vemos a las 8 en casa de tu jefa GPI. ',
-            'link':'http://ticketmaster.com',
-            'linkTexto':'Compra tus boletos.'
+            'titulo':'28 de Enero: Estreno "DMENT"',
+            'detalles':'Disfruta nuestro nuevo EP en todas las plataformas',
+            //'link':'http://ticketmaster.com',
+            //'linkTexto':'Compra tus boletos.'
             
         },
     ],

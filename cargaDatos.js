@@ -8,7 +8,7 @@ document.getElementById("youtube-link").href=datos['youtube-link'];
 document.getElementById("tiktok-link").href=datos['tiktok-link'];
 document.getElementById("mail-link").href='mailto:'+datos['mail'];
 document.getElementById("mail-link").innerHTML=datos['mail'];
-
+document.getElementById("whatsapp").href=datos['whatsapp'];
 //Cargamos Fechas
 var fechas=datos['fechas'];
 var fechasContainer=document.getElementById('fechas-container');
