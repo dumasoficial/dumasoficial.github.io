@@ -34,8 +34,9 @@ for(var fecha of fechas){
     fechasContainer.appendChild(tempDiv);
 }
 
-//Cargamos Video
+//Cargamos Videos
 document.getElementById("video-youtube").src="https://www.youtube.com/embed/"+datos['video-embed'];
+document.getElementById("makingof-video").src="https://www.youtube.com/embed/"+datos['makingof-video'];
 
 //Cargamos Merch
 var merch=datos['merch'];
