@@ -250,8 +250,11 @@ header .overlay {
 }
 .imagen-carusel{
   height: 35rem;
+  width: 100%;
+  background-position: center;
   object-fit: cover;
 }
+
 
 
 a,a:active,a:hover{
