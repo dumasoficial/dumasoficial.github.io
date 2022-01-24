@@ -44,7 +44,7 @@ datos={
         //Un producto
         {
             'foto':'merch/gorroGris.png',
-            'texto':'Gorros Gris <br><strike>$150</strike> $100'
+            'texto':'Gorro Gris <br><strike>$150</strike> $100'
         },
         //Un producto
         {
@@ -54,7 +54,7 @@ datos={
         //Un producto
         {
             'foto':'merch/stickers.jpg',
-            'texto':'Stickers $10 <br> (GRATIS con cualquier compra)'
+            'texto':'Stickers <br>$10 <br> (GRATIS con cualquier compra)'
         },
 
     ],
