@@ -27,7 +27,7 @@ datos={
     //Este es el codigo que sale cuando estan en el video, le dan compartir y sale justo despues de 
     //https://youtu.be/
     'video-embed':'3xUaOLdQD1A',
-    'makingof-video':'BE23d6_PEdY',
+    'makingof-video':'CHfClxGLZEk',
     
     //Merch
     'merch':[
